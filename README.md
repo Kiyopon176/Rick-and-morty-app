@@ -1,21 +1,76 @@
-<<<<<<< HEAD
-# Rick-and-morty-app
-App for characters of "Rick and Morty" cartoon
-=======
-# rick_and_morty_app
+# Rick and Morty Explorer
 
-A new Flutter project.
+![Rick and Morty Banner](https://rickandmortyapi.com/api/character/avatar/1.jpeg)
 
-## Getting Started
+Мобильное приложение на Flutter для просмотра персонажей из мультсериала "Рик и Морти" с возможностью добавления в избранное и оффлайн-доступом к данным.
 
-This project is a starting point for a Flutter application.
+## 📱 Скриншоты
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+  <img src="screenshots/photo_1_2025-05-02_17-56-01.jpg" width="200" alt="Главный экран"/>
+  <img src="screenshots/photo_2_2025-05-02_17-56-01.jpg" width="200" alt="Детали персонажа"/>
+  <img src="screenshots/photo_3_2025-05-02_17-56-01.jpg" width="200" alt="Избранное"/>
+  <img src="screenshots/photo_4_2025-05-02_17-56-01.jpg" width="200" alt="Тёмная тема"/>
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Функциональные возможности
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> master
+- **Обзор персонажей**: Список всех персонажей из мультсериала "Рик и Морти"
+- **Подробная информация**: Имя, статус, вид, локация и другие характеристики персонажей
+- **Избранное**: Добавление и удаление персонажей из списка избранных
+- **Сортировка**: Сортировка избранных персонажей по различным параметрам
+- **Оффлайн-режим**: Доступ к данным без подключения к интернету
+- **Пагинация**: Автоматическая подгрузка персонажей при скролле
+- **Тёмная тема**: Поддержка светлой и тёмной темы интерфейса
+
+## 🔧 Технологии
+
+- **Flutter**: Для создания кроссплатформенного приложения
+- **Provider**: Для управления состоянием
+- **Hive**: Для хранения данных и работы в оффлайн-режиме
+- **HTTP**: Для выполнения API-запросов
+- **Cached Network Image**: Для эффективной загрузки и кэширования изображений
+
+## 🚀 Установка и запуск
+
+1. Убедитесь, что у вас установлен Flutter и настроено окружение для разработки
+2. Клонируйте репозиторий:
+   ```
+   git clone https://github.com/yourusername/rick_and_morty_app.git
+   ```
+3. Перейдите в директорию проекта:
+   ```
+   cd rick_and_morty_app
+   ```
+4. Установите зависимости:
+   ```
+   flutter pub get
+   ```
+5. Запустите приложение:
+   ```
+   flutter run
+   ```
+
+## 📊 Архитектура
+
+Приложение следует архитектуре Provider Pattern:
+
+- **Models**: Определяют структуру данных (Character, Origin, Location)
+- **Services**: Содержат бизнес-логику (API и Database)
+- **Providers**: Управляют состоянием приложения и соединяют UI с сервисами
+- **Screens**: Экраны приложения (CharactersScreen, FavoritesScreen)
+- **Widgets**: Переиспользуемые компоненты UI (CharacterCard, FavoriteButton)
+
+## 🔗 API
+
+Приложение использует [The Rick and Morty API](https://rickandmortyapi.com/):
+- Базовый URL: `https://rickandmortyapi.com/api`
+- Эндпоинт персонажей: `https://rickandmortyapi.com/api/character`
+
+## 📜 Лицензия
+
+MIT
+
+---
+
+Создано с ❤️ любителям Rick and Morty
