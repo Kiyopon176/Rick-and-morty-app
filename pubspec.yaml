@@ -1,0 +1,39 @@
+name: rick_and_morty_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # HTTP client for API requests
+  http: ^1.2.0
+  # State management
+  provider: ^6.1.1
+  # Local storage - Hive
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.2
+  # UI components
+  cached_network_image: ^3.3.1
+  flutter_staggered_animations: ^1.1.1
+  # For connectivity status
+  connectivity_plus: ^5.0.2
+  # For easy access to share preferences
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  # For Hive type generation
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
